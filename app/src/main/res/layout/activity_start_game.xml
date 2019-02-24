@@ -32,7 +32,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/r12"
@@ -40,7 +42,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/r13"
@@ -48,7 +52,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
 
         </TableRow>
 
@@ -63,7 +69,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/r22"
@@ -71,7 +79,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/r23"
@@ -79,7 +89,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
         </TableRow>
 
         <TableRow
@@ -93,7 +105,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/r32"
@@ -101,7 +115,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/r33"
@@ -109,9 +125,33 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="72dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/opp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerName" />
 
 </android.support.constraint.ConstraintLayout>

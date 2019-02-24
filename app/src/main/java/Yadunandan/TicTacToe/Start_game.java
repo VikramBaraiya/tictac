@@ -13,6 +13,7 @@ public class Start_game extends AppCompatActivity implements View.OnClickListene
     Button r11,r12,r13,r21,r22,r23,r31,r32,r33;
     String r11str,r12str,r13str,r21str,r22str,r23str,r31str,r32str,r33str;
 
+    Bundle b;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,13 @@ public class Start_game extends AppCompatActivity implements View.OnClickListene
         r31.setOnClickListener(this);
         r32.setOnClickListener(this);
         r33.setOnClickListener(this);
+        b=getIntent().getExtras();
+        String playername=b.getString("player");
+        String opponent=b.getString("opponent");
+        TextView t1=findViewById(R.id.playerName);
+        t1.setText(playername);
+        TextView t2=findViewById(R.id.opp);
+        t2.setText(opponent);
 
 
 

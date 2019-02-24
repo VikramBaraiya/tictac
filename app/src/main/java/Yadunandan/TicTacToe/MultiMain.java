@@ -22,9 +22,11 @@ public class MultiMain extends AppCompatActivity {
         begin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //   Intent i =new Intent(getApplicationContext(),Start_game.class);
-
-                startActivity(new Intent(getApplicationContext(),Start_game.class));
+              Intent i =new Intent(getApplicationContext(),Start_game.class);
+              i.putExtra("player",player.getText().toString());
+              i.putExtra("opponent",opponent.getText().toString());
+              startActivity(i);
+                //startActivity(new Intent(getApplicationContext(),Start_game.class));
             }
         });
 
