@@ -11,6 +11,8 @@ public class Start_game extends AppCompatActivity implements View.OnClickListene
 
     static int count=0;
     Button r11,r12,r13,r21,r22,r23,r31,r32,r33;
+    String r11str,r12str,r13str,r21str,r22str,r23str,r31str,r32str,r33str;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,12 +66,44 @@ public class Start_game extends AppCompatActivity implements View.OnClickListene
           }
 
       }
+      public void updateText()
+      {
+          r11str=r11.getText().toString();
+          r12str=r12.getText().toString();
+          r13str=r13.getText().toString();
+          r21str=r21.getText().toString();
+          r22str=r22.getText().toString();
+          r23str=r23.getText().toString();
+          r31str=r31.getText().toString();
+          r32str=r32.getText().toString();
+          r33str=r33.getText().toString();
+
+
+
+
+      }
     @Override
     public void onClick(View v) {
-        String value="";
+        String value= "";
+//        String r11str,r12str,r13str,r21str,r22str,r23str,r31str,r32str,r33str;
         switch (v.getId()){
             case R.id.r11:
                 toggle(r11);
+
+                //check winner
+                if(count>4)
+                {
+  //                  r11str=r11.getText().toString();
+                         updateText();
+                         if(r11str.equals(r12str) && r11str.equals(r13str))
+                         {
+                             Toast.makeText(getApplicationContext(),"you won",Toast.LENGTH_SHORT).show();
+                         }
+                }
+
+
+
+
                break;
             case R.id.r12:
                 toggle(r12);
